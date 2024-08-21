@@ -7,15 +7,20 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/alexedwards/scs/postgresstore"
+	"github.com/alexedwards/scs/v2"
 	_ "github.com/joho/godotenv/autoload"
 
 	"portfolio/internal/database"
+	"portfolio/internal/models"
 )
 
 type Server struct {
 	port int
 
-	db database.Service
+	db             database.Service
+	sessionManager *scs.SessionManager
+	models         models.Models
 }
 
 func NewServer() *http.Server {
@@ -25,6 +30,10 @@ func NewServer() *http.Server {
 
 		db: database.New(),
 	}
+	sessionManager := scs.New()
+	sessionManager.Store = postgresstore.New(NewServer.db.GetDB())
+	NewServer.sessionManager = sessionManager
+	NewServer.models = models.NewModels(NewServer.db.GetDB())
 
 	// Declare Server config
 	server := &http.Server{

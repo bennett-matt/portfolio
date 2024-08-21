@@ -1,119 +1,117 @@
 package web
 
 templ Projects() {
-	@Base() {
-		<div class="relative flex size-full min-h-screen flex-col bg-[#111a22] dark group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
-			<div class="layout-container flex h-full grow flex-col">
-				<div class="px-40 flex flex-1 justify-center py-5">
-					<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-						<div class="@container">
-							<div class="@[480px]:px-4 @[480px]:py-3">
-								<div
-									class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden bg-[#111a22] @[480px]:rounded-xl min-h-[218px]"
-									style='background-image: url("https://cdn.usegalileo.ai/sdxl10/f015c972-46db-4b98-a38c-440ea69f392f.png");'
-								></div>
+	<div class="relative flex size-full min-h-screen flex-col bg-[#111a22] dark group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+		<div class="layout-container flex h-full grow flex-col">
+			<div class="px-40 flex flex-1 justify-center py-5">
+				<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+					<div class="@container">
+						<div class="@[480px]:px-4 @[480px]:py-3">
+							<div
+								class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden bg-[#111a22] @[480px]:rounded-xl min-h-[218px]"
+								style='background-image: url("https://cdn.usegalileo.ai/sdxl10/f015c972-46db-4b98-a38c-440ea69f392f.png");'
+							></div>
+						</div>
+					</div>
+					<h2 class="text-white tracking-light text-[28px] font-bold leading-tight px-4 text-left pb-3 pt-5">Projects</h2>
+					<h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Featured Projects</h3>
+					<div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+						<div class="flex flex-col gap-3 pb-3">
+							<div
+								class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+								style='background-image: url("https://cdn.usegalileo.ai/sdxl10/3ef06137-bb3d-4a24-9aad-b509c3841523.png");'
+							></div>
+							<div>
+								<p class="text-white text-base font-medium leading-normal">Project 1</p>
+								<p class="text-[#93adc8] text-sm font-normal leading-normal">Technology company website</p>
 							</div>
 						</div>
-						<h2 class="text-white tracking-light text-[28px] font-bold leading-tight px-4 text-left pb-3 pt-5">Projects</h2>
-						<h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Featured Projects</h3>
-						<div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-							<div class="flex flex-col gap-3 pb-3">
-								<div
-									class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-									style='background-image: url("https://cdn.usegalileo.ai/sdxl10/3ef06137-bb3d-4a24-9aad-b509c3841523.png");'
-								></div>
-								<div>
-									<p class="text-white text-base font-medium leading-normal">Project 1</p>
-									<p class="text-[#93adc8] text-sm font-normal leading-normal">Technology company website</p>
-								</div>
-							</div>
-							<div class="flex flex-col gap-3 pb-3">
-								<div
-									class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-									style='background-image: url("https://cdn.usegalileo.ai/stability/cc6b2b70-53f9-494c-b1b4-566d2a3ab355.png");'
-								></div>
-								<div>
-									<p class="text-white text-base font-medium leading-normal">Project 2</p>
-									<p class="text-[#93adc8] text-sm font-normal leading-normal">E-commerce platform</p>
-								</div>
-							</div>
-							<div class="flex flex-col gap-3 pb-3">
-								<div
-									class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-									style='background-image: url("https://cdn.usegalileo.ai/sdxl10/5d2a35df-c3d0-4a0f-ae13-1af5da66b352.png");'
-								></div>
-								<div>
-									<p class="text-white text-base font-medium leading-normal">Project 3</p>
-									<p class="text-[#93adc8] text-sm font-normal leading-normal">Mobile app for personal finance</p>
-								</div>
-							</div>
-							<div class="flex flex-col gap-3 pb-3">
-								<div
-									class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-									style='background-image: url("https://cdn.usegalileo.ai/stability/f1cf197c-4243-4e13-a703-2ac2af4c38ff.png");'
-								></div>
-								<div>
-									<p class="text-white text-base font-medium leading-normal">Project 4</p>
-									<p class="text-[#93adc8] text-sm font-normal leading-normal">Health &amp; wellness blog</p>
-								</div>
+						<div class="flex flex-col gap-3 pb-3">
+							<div
+								class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+								style='background-image: url("https://cdn.usegalileo.ai/stability/cc6b2b70-53f9-494c-b1b4-566d2a3ab355.png");'
+							></div>
+							<div>
+								<p class="text-white text-base font-medium leading-normal">Project 2</p>
+								<p class="text-[#93adc8] text-sm font-normal leading-normal">E-commerce platform</p>
 							</div>
 						</div>
-						<h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">All Projects</h3>
-						<div class="flex items-center gap-4 bg-[#111a22] px-4 min-h-[72px] py-2 justify-between">
-							<div class="flex items-center gap-4">
-								<div
-									class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14"
-									style='background-image: url("https://cdn.usegalileo.ai/sdxl10/069d828d-d53d-47fd-937f-748770055ffd.png");'
-								></div>
-								<div class="flex flex-col justify-center">
-									<p class="text-white text-base font-medium leading-normal line-clamp-1">Project 1</p>
-									<p class="text-[#93adc8] text-sm font-normal leading-normal line-clamp-2">Technology company website</p>
-								</div>
+						<div class="flex flex-col gap-3 pb-3">
+							<div
+								class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+								style='background-image: url("https://cdn.usegalileo.ai/sdxl10/5d2a35df-c3d0-4a0f-ae13-1af5da66b352.png");'
+							></div>
+							<div>
+								<p class="text-white text-base font-medium leading-normal">Project 3</p>
+								<p class="text-[#93adc8] text-sm font-normal leading-normal">Mobile app for personal finance</p>
 							</div>
-							<div class="shrink-0"><p class="text-white text-base font-normal leading-normal">2022</p></div>
 						</div>
-						<div class="flex items-center gap-4 bg-[#111a22] px-4 min-h-[72px] py-2 justify-between">
-							<div class="flex items-center gap-4">
-								<div
-									class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14"
-									style='background-image: url("https://cdn.usegalileo.ai/stability/f6c4f4a8-10ec-485a-9e38-ceb15ce16fb9.png");'
-								></div>
-								<div class="flex flex-col justify-center">
-									<p class="text-white text-base font-medium leading-normal line-clamp-1">Project 2</p>
-									<p class="text-[#93adc8] text-sm font-normal leading-normal line-clamp-2">E-commerce platform</p>
-								</div>
+						<div class="flex flex-col gap-3 pb-3">
+							<div
+								class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+								style='background-image: url("https://cdn.usegalileo.ai/stability/f1cf197c-4243-4e13-a703-2ac2af4c38ff.png");'
+							></div>
+							<div>
+								<p class="text-white text-base font-medium leading-normal">Project 4</p>
+								<p class="text-[#93adc8] text-sm font-normal leading-normal">Health &amp; wellness blog</p>
 							</div>
-							<div class="shrink-0"><p class="text-white text-base font-normal leading-normal">2021</p></div>
 						</div>
-						<div class="flex items-center gap-4 bg-[#111a22] px-4 min-h-[72px] py-2 justify-between">
-							<div class="flex items-center gap-4">
-								<div
-									class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14"
-									style='background-image: url("https://cdn.usegalileo.ai/sdxl10/0f344c51-6fa0-4407-b17a-1aefcb39ccc0.png");'
-								></div>
-								<div class="flex flex-col justify-center">
-									<p class="text-white text-base font-medium leading-normal line-clamp-1">Project 3</p>
-									<p class="text-[#93adc8] text-sm font-normal leading-normal line-clamp-2">Mobile app for personal finance</p>
-								</div>
+					</div>
+					<h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">All Projects</h3>
+					<div class="flex items-center gap-4 bg-[#111a22] px-4 min-h-[72px] py-2 justify-between">
+						<div class="flex items-center gap-4">
+							<div
+								class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14"
+								style='background-image: url("https://cdn.usegalileo.ai/sdxl10/069d828d-d53d-47fd-937f-748770055ffd.png");'
+							></div>
+							<div class="flex flex-col justify-center">
+								<p class="text-white text-base font-medium leading-normal line-clamp-1">Project 1</p>
+								<p class="text-[#93adc8] text-sm font-normal leading-normal line-clamp-2">Technology company website</p>
 							</div>
-							<div class="shrink-0"><p class="text-white text-base font-normal leading-normal">2020</p></div>
 						</div>
-						<div class="flex items-center gap-4 bg-[#111a22] px-4 min-h-[72px] py-2 justify-between">
-							<div class="flex items-center gap-4">
-								<div
-									class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14"
-									style='background-image: url("https://cdn.usegalileo.ai/stability/a3f6abe6-e8a8-4dfc-a282-5b7f905034fe.png");'
-								></div>
-								<div class="flex flex-col justify-center">
-									<p class="text-white text-base font-medium leading-normal line-clamp-1">Project 4</p>
-									<p class="text-[#93adc8] text-sm font-normal leading-normal line-clamp-2">Health &amp; wellness blog</p>
-								</div>
+						<div class="shrink-0"><p class="text-white text-base font-normal leading-normal">2022</p></div>
+					</div>
+					<div class="flex items-center gap-4 bg-[#111a22] px-4 min-h-[72px] py-2 justify-between">
+						<div class="flex items-center gap-4">
+							<div
+								class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14"
+								style='background-image: url("https://cdn.usegalileo.ai/stability/f6c4f4a8-10ec-485a-9e38-ceb15ce16fb9.png");'
+							></div>
+							<div class="flex flex-col justify-center">
+								<p class="text-white text-base font-medium leading-normal line-clamp-1">Project 2</p>
+								<p class="text-[#93adc8] text-sm font-normal leading-normal line-clamp-2">E-commerce platform</p>
 							</div>
-							<div class="shrink-0"><p class="text-white text-base font-normal leading-normal">2019</p></div>
 						</div>
+						<div class="shrink-0"><p class="text-white text-base font-normal leading-normal">2021</p></div>
+					</div>
+					<div class="flex items-center gap-4 bg-[#111a22] px-4 min-h-[72px] py-2 justify-between">
+						<div class="flex items-center gap-4">
+							<div
+								class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14"
+								style='background-image: url("https://cdn.usegalileo.ai/sdxl10/0f344c51-6fa0-4407-b17a-1aefcb39ccc0.png");'
+							></div>
+							<div class="flex flex-col justify-center">
+								<p class="text-white text-base font-medium leading-normal line-clamp-1">Project 3</p>
+								<p class="text-[#93adc8] text-sm font-normal leading-normal line-clamp-2">Mobile app for personal finance</p>
+							</div>
+						</div>
+						<div class="shrink-0"><p class="text-white text-base font-normal leading-normal">2020</p></div>
+					</div>
+					<div class="flex items-center gap-4 bg-[#111a22] px-4 min-h-[72px] py-2 justify-between">
+						<div class="flex items-center gap-4">
+							<div
+								class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14"
+								style='background-image: url("https://cdn.usegalileo.ai/stability/a3f6abe6-e8a8-4dfc-a282-5b7f905034fe.png");'
+							></div>
+							<div class="flex flex-col justify-center">
+								<p class="text-white text-base font-medium leading-normal line-clamp-1">Project 4</p>
+								<p class="text-[#93adc8] text-sm font-normal leading-normal line-clamp-2">Health &amp; wellness blog</p>
+							</div>
+						</div>
+						<div class="shrink-0"><p class="text-white text-base font-normal leading-normal">2019</p></div>
 					</div>
 				</div>
 			</div>
 		</div>
-	}
+	</div>
 }

@@ -1,8 +1,11 @@
-package web
+package layouts
 
-import "portfolio/cmd/web/components"
+import (
+	"portfolio/cmd/web/components"
+	"portfolio/internal/models"
+)
 
-templ Base() {
+templ Base(contents templ.Component, data *models.ViewData) {
 	<!DOCTYPE html>
 	<html lang="en">
 		<head>
@@ -13,8 +16,8 @@ templ Base() {
 		</head>
 		<body>
 			<main>
-				@components.Header()
-				{ children... }
+				@components.Header(data.IsAuthenticated)
+				@contents
 			</main>
 		</body>
 	</html>

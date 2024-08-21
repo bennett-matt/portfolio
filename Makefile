@@ -20,7 +20,7 @@ docker-run:
 		: ; \
 	else \
 		echo "Falling back to Docker Compose V1"; \
-		docker-compose up; \
+		docker-compose up -d; \
 	fi
 
 # Shutdown DB container
@@ -68,5 +68,16 @@ watch:
             fi; \
         fi
 
+migrate.create:
+	@echo "Creating migration..."
+	@migrate create -seq -ext sql -dir ./migrations $(name)
 
-.PHONY: all build run test clean watch
+migrate.up:
+	@echo "Running migrations..."
+	@migrate -path=./migrations -database=$(DB_DSN) up
+
+migrate.force:
+	@echo "Rolling back migrations..."
+	@migrate -path=./migrations -database=$(DB_DSN) force $(version)
+
+.PHONY: all build run test clean watch migrate.create migrate.up migrate.force 
